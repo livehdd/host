@@ -1,1 +1,7 @@
-
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
+  project: "srv1-fsb26-ru"
+  message: "Deploying!!!"
